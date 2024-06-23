@@ -1,5 +1,20 @@
 ## Monoliths
+A monolithic architecture is a traditional model for designing a software application where all the components are interconnected and interdependent. In this architecture, the application is built as a single, cohesive unit, and all functions run as a single process.  
 
+**Features**:  
+1. Single Codebase
+2. Unified Deployment
+3. Tightly Coupled
+4. Shared Memory (Components share the same memory space, simplifies communication within the application)
+5. Centralized Management
+
+**Drawbacks**:  
+1. Scalability Issues (Scaling parts of the application independently is difficult; the entire application must be scaled)
+2. Maintenance Complexity (As the application grows, it becomes more complex and harder to understand and manage)
+3. Deployment Bottlenecks (Small changes can require the entire application to be redeployed, increasing the risk of failure)
+4. Limited Flexibility (Technology stack choices are limited since changing a technology affects the entire application)
+5. Slow Development (Development can slow down as more teams work on the same codebase, leading to integration issues)
+6. Fault Isolation (A bug in any module can potentially bring down the entire application)
 
 ## What Is a Modular Monolith?
 A Modular Monolith is a software design approach in which a monolith is designed with an emphasis on interchangeable (and potentially reusable) modules.  
